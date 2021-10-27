@@ -1,0 +1,111 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #F1F1F1;
+  -webkit-transition: 400ms background-color ease-out;
+  transition: 400ms background-color ease-out;
+  color: #000;
+}
+
+h1 {
+  text-align: center;
+  margin: 10% 0;
+}
+
+.lightskyblue {
+  background-color: lightskyblue;
+  -webkit-transition: 400ms background-color ease-out;
+  transition: 400ms background-color ease-out;
+}
+
+.lightblue {
+  background-color: lightblue;
+  -webkit-transition: 400ms background-color ease-out;
+  transition: 400ms background-color ease-out;
+}
+
+.lightsalmon {
+  background-color: lightsalmon;
+  -webkit-transition: 400ms background-color ease-out;
+  transition: 400ms background-color ease-out;
+}
+
+.lightcoral {
+  background-color: lightcoral;
+  -webkit-transition: 400ms background-color ease-out;
+  transition: 400ms background-color ease-out;
+}
+
+nav.main-nav {
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  z-index: 1000;
+}
+
+nav.main-nav .btn-toggle-nav {
+  width: 60px;
+  height: 100%;
+  background-image: url(../img/hamburger.png);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: center;
+  cursor: pointer;
+}
+
+nav.main-nav .toggle-nav {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  height: 300px;
+  background-color: #FFF;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+nav.main-nav .toggle-nav.hidden {
+  width: 0px;
+  -webkit-transition: 400ms width ease-out;
+  transition: 400ms width ease-out;
+}
+
+nav.main-nav .toggle-nav.visible {
+  width: 300px;
+  -webkit-transition: 400ms width ease-in-out;
+  transition: 400ms width ease-in-out;
+}
+
+nav.main-nav ul li {
+  line-height: 60px;
+  list-style: none;
+  display: block;
+  cursor: pointer;
+}
+
+nav.main-nav ul li:hover {
+  opacity: 0.75;
+}
+
+nav.main-nav ul li span {
+  display: block;
+  height: 60px;
+  padding: 0 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  font-family: Arial;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+nav.main-nav ul li label {
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

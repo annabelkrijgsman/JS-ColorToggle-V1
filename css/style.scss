@@ -1,0 +1,103 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F1F1F1;
+    transition: 400ms background-color ease-out;
+    color: #000;
+}
+
+h1 {
+    text-align: center;
+    margin: 10% 0;
+}
+
+.lightskyblue {
+    background-color: lightskyblue;
+    transition: 400ms background-color ease-out;
+}
+
+.lightblue {
+    background-color: lightblue;
+    transition: 400ms background-color ease-out;
+}
+
+.lightsalmon {
+    background-color: lightsalmon;
+    transition: 400ms background-color ease-out;
+}
+
+.lightcoral {
+    background-color: lightcoral;
+    transition: 400ms background-color ease-out;
+}
+
+nav.main-nav {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1000;
+
+    .btn-toggle-nav {
+        width: 60px;
+        height: 100%;
+        background-image: url(../img/hamburger.png);
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .toggle-nav {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        height: 300px;
+        background-color: #FFF;
+        z-index: 1000;
+        overflow: hidden;
+
+        &.hidden {
+            width: 0px;
+            transition: 400ms width ease-out;
+        }
+
+        &.visible {
+            width: 300px;
+            transition: 400ms width ease-in-out;
+        }
+    }
+
+    ul {
+
+        li {
+            line-height: 60px;
+            list-style: none;
+            display: block;
+            cursor: pointer;
+            
+            &:hover {
+                opacity: 0.75;
+            }
+
+            span {
+                display: block;
+                height: 60px;
+                padding: 0 10px;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #000;
+                font-family: Arial;
+                font-size: 16px;
+                white-space: nowrap;
+            }
+
+            label {
+                cursor: pointer;
+            }
+        }   
+    }
+}
